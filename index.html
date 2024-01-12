@@ -6,33 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-     class Rectangle {
-    constructor(height = 0, width = 0) {
-        this._height = height;
-        this._width = width;
-    }
-    get height() {
-        return this._height;
-    }
-    set height(value) {
-        if (value >= 0) {
-            this._height = value;
-        } else {
-            console.error("Height must be a non-negative value");
+     <script>
+        class rectangle{
+            width=0;
+            height=0;
+            
+            set_width(first){
+                this.width=first;
+            }
+            set_height(two){
+                this.height=two;
+            }
         }
-    }
-    get width() {
-        return this._width;
-    }
-    set width(value) {
-        if (value >= 0) {
-            this._width = value;
-        } else {
-            console.error("Width must be a non-negative value");
-        }
-    }
-}
+        rec=new rectangle();
+        rec.set_width(10);
+        rec.set_height(15);
+        document.write(rec.height, rec.width);
     </script>
 </body>
 </html>
